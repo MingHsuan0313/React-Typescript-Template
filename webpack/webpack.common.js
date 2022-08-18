@@ -1,10 +1,10 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: path.resolve(__dirname, "..", "./src/index.tsx"),
+  entry: path.resolve(__dirname, '..', './src/index.tsx'),
   resolve: {
-    extensions: [".tsx", ".js", ".ts"],
+    extensions: ['.tsx', '.js', '.ts'],
   },
   module: {
     rules: [
@@ -13,19 +13,19 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader",
+            loader: 'babel-loader',
           },
         ],
       },
     ],
   },
   output: {
-    path: path.resolve(__dirname, "..", "./build"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, '..', './build'),
+    filename: 'bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "..", "./src/index.html"),
+      template: path.resolve(__dirname, '..', './src/index.html'),
     }),
   ],
-};
+}
