@@ -4,12 +4,12 @@ React Typescript Template
 
 ## Description
 
-This is a quick start React with Typescript and Webpack 5 project template, which contains code quality checking tool : `eslint` and well known formatter: `prettier`
+This is a quick start React with Typescript and Webpack 5 project template, which contains code quality checking tool : `eslint`, `stylelint` and well known formatter: `prettier`
 
 Git hook (husky), like pre-commit and commit-msg hooks are also considered in this project
 
 - pre-commit
-  - linting: `eslint`
+  - linting: `eslint`, `stylelint`
   - formatting: `prettier`
 - commit-msg
   - commit message style guard: `commitlint`
